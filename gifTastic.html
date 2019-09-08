@@ -26,6 +26,7 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
   <body>
     <div class="jumbotron jumbotron-fluid">
@@ -38,20 +39,31 @@
         </p>
       </div>
     </div>
-    <div class="container">
+    <form id="movie-form">
+      <label for="movie-input">Add a Movie, Yo!</label>
+      <input type="text" id="movie-input" /><br />
+
+      <!-- Button triggers new movie to be added -->
+      <input id="add-movie" type="submit" value="Add a Movie, Yo!" />
+    </form>
+    <!-- <div class="container">
       <form class="px-4 py-3">
         <div class="form-group">
           <label for="exampleSearch1">Search</label>
           <input
-            type="search"
+            type="text"
             class="form-control"
-            id="exampleSearch"
+            id="search-input"
             placeholder="Search"
           />
         </div>
-        <button type="submit" class="btn btn-primary">Search</button>
+        <button type="submit" class="btn btn-primary" id="add-gif">
+          Search
+        </button>
       </form>
-    </div>
+    </div>-->
+    <!----------------buttons go here--------------->
+    <div id="buttons-view"></div>
     <script type="text/javascript" src="gifTastic.js"></script>
   </body>
 </html>
